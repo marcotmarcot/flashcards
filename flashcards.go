@@ -75,7 +75,7 @@ func probs(size int) []float64 {
 	for _, line := range strings.Split(string(bytes), "\n") {
 		p, err := strconv.ParseFloat(line, 64)
 		if err != nil {
-			log.Fatal(err)
+			continue
 		}
 		ps = append(ps, p)
 	}
