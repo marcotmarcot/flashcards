@@ -105,7 +105,6 @@ func right() bool {
 	for true {
 		fmt.Println("Right? [y/n]")
 		fmt.Scanln(&input)
-		fmt.Println(input)
 		if input == "y" || input == "n" {
 			break
 		}
